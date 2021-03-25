@@ -1,0 +1,14 @@
+body{
+    background-color: whitesmoke;
+    color: black;
+    font: normal 18pt Arial;
+}
+div{
+    font: normal 15pt Arial;
+    background: gray;
+    color: whitesmoke;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}

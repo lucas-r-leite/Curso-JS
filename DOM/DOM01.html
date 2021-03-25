@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleDOM.css">
+    <title>CursoJS DOM</title>
+</head>
+<body>
+    <h1>Iniciando estudos em DOM</h1>
+    <div id="mensagem">Tudo no JS está dentro de WINDOW</div>
+    <script>
+        //window.document.write(window.document.URL)
+        var p1 = window.document.getElementsByTagName('h1')[0] //Pega o primeiro parágrafo que aparecer
+        window.document.write(p1.innerText) //innerHTML puxa o texto com a formatação.
+        //p1.style.color = 'blue'
+        var d = window.document.getElementById('mensagem')
+        //d.style.background = 'red'
+        var d1 = window.document.querySelector('div#mensagem')
+        //Para class '.'. Para id '#'
+        d1.style.background = 'red'
+    </script>
+</body>
+</html>

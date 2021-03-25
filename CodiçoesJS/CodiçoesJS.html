@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursoJS Condições</title>
+</head>
+<body>
+    <h1>CursoJS parte D - Condições</h1>
+        Digite um número:
+        <input type="number" name="numero" id="numero">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res"></div>
+    <script>
+        function verificar(){
+            var res = window.document.querySelector('div#res')
+            var txtn = window.document.getElementById('numero')
+            var n = Number(txtn.value)
+            if (n == 3){
+                res.innerHTML += '<p>O número é igual a 3</p>'
+            } else{
+                res.innerHTML += '<p>O número não é 3</p>'
+            }
+            res.innerHTML += '<p>Digite novamente</p>'
+        }
+    </script>
+</body>
+</html>
