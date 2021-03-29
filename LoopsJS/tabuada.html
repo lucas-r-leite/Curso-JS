@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Hora do Dia</title>
+    <title>Tabuada</title>
 </head>
-<body onload="load()">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="msg"></div>
-        <div id="foto">
-            <img id="img" src="imagens/sunrise.png" alt="foto do dia"> <!--Imagem default-->
+        <div></div>
+        <p> Número
+            <input type="number" name="numero" id="numero">
+        </p>
+        <p>
+            <input type="button" value="Tabuada" onclick="tabuada()">
+        </p>
+        <div>
+            <select name="tabuada" id="tab" size="10">
+
+            </select>
         </div>
         
     </section>
     <footer>
         <p>&copy; Genergia</p>
     </footer>
-    <script src="script_hour.js"></script>
+    <script src="tabuada.js"></script>
 </body>
 </html>
