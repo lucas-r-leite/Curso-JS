@@ -8,7 +8,7 @@ function tabuada(){
     }else{
         tab.innerHTML = '' //Limpando a section
         for(var c = 1; c <= 10; c++){
-            var item = document.createElement('option') //Cria as options de forma dinâmica dentro de section
+            var item = document.createElement('option') //Cria as options de forma dinâmica dentro de select
             item.text = `${numero} x ${c} = ${numero * c}` 
             item.value = `tab${c}` //Mostra o item selecionado em algumas linguagens
             tab.appendChild(item) //Adiciona o elemento filho. É necessário para mostrar os elementos na tela
